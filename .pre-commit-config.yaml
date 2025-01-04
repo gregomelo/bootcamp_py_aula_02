@@ -21,7 +21,9 @@ repos:
     hooks:
     -   id: isort
 
--   repo: local # ttps://github.com/myint/docformatter
+# docformatter
+# Para funcionamento do hook, é necessário instalá-lo manualmente e usá-lo localmente com o argumento de linguagem
+-   repo: local
     hooks:
     -   id: docformatter
         name: docformatter
