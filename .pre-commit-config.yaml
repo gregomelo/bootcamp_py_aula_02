@@ -30,7 +30,7 @@ repos:
         name: docformatter
         entry: docformatter
         language: python
-        args: ["--in-place", "--wrap-summaries=88", "--wrap-descriptions=88"]
+        args: ["--in-place", --make-summary-multi-line", --wrap-summaries=88", "--wrap-descriptions=88"]
         files: \.py$
 
 -   repo: https://github.com/PyCQA/pydocstyle
