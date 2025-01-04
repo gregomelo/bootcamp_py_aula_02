@@ -24,14 +24,20 @@ repos:
 
 # docformatter
 # Para funcionamento do hook, é necessário instalá-lo manualmente e usá-lo localmente com o argumento de linguagem
--   repo: local
+# -   repo: local
+    # hooks:
+    # -   id: docformatter
+    #     name: docformatter
+    #     entry: docformatter
+    #     language: python
+    #     args: ["--in-place", "--wrap-summaries=88", "--wrap-descriptions=88"]
+    #     files: \.py$
+
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v2.0.2
     hooks:
-    -   id: docformatter
-        name: docformatter
-        entry: docformatter
-        language: python
-        args: ["--in-place", --make-summary-multi-line", --wrap-summaries=88", "--wrap-descriptions=88"]
-        files: \.py$
+    -   id: autopep8
+        args: ["--max-line-length=88", "--in-place", "--aggressive", "--aggressive"]
 
 -   repo: https://github.com/PyCQA/pydocstyle
     rev: 6.3.0
