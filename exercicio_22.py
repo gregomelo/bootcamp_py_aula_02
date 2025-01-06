@@ -1,4 +1,4 @@
-"""Exercício 25: Verificador de Palíndromo."""
+"""Exercício 22: Verificador de Palíndromo."""
 
 """
 Crie um programa que verifica se uma palavra ou frase é um palíndromo
@@ -16,9 +16,7 @@ elif isinstance(cadeia_caracteres, str):
     if cadeia_caracteres == cadeia_caracteres[::-1]:
         print("A cadeia informada é Palíndromo.")
     elif cadeia_caracteres.lower() == cadeia_caracteres.lower()[::-1]:
-        print(
-            "A cadeia informada é Palíndromo, porém, com diferenças entre letras maiúsculas e minúsculas."
-        )
+        print("A cadeia é Palíndromo com diferenças entre maiúsculas e minúsculas.")
     else:
         print("A cadeia informada não é Palíndromo.")
         exit()

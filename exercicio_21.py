@@ -13,7 +13,8 @@ try:
     )
     temperatura_fahrenheit = (temperatura_celsius * 9 / 5) + 32
     print(
-        f"A temperatura de {temperatura_celsius:.2f}oC é igual a {temperatura_fahrenheit:.2f}oF."
+        f"A temperatura de {temperatura_celsius:.2f}°C "
+        f"é igual a {temperatura_fahrenheit:.2f}°F."
     )
 except ValueError:
     print("O valor de tempertura digitado não é um número.")
